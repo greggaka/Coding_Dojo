@@ -32,8 +32,7 @@ while (x<=7) { //can change 7 to however many miles one plans to run
         console.log("You ran 2 miles! Here is a piece of candy!");
             }
             else {
-            console.log("You completed a mile. Do one more for a piece of candy!"); //prints for every odd number mile
-            }
+                console.log("You completed a mile. Do one more for a piece of candy!"); //prints for every odd number mile
         }
         else {
             console.log ("You completed another mile. Keep going for your own good!"); //prints if mile ran is above 6 (no candy given)
