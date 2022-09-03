@@ -3,6 +3,6 @@
 function greeting(){
         return "Hello World";
     }
-    var word = greeting();
+    var word = greeting(); // <<assigning Hello World to the variable word
     console.log(word);
     
