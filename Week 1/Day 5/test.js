@@ -2,7 +2,7 @@
 // Countdown by Fours
 // Print positive numbers starting with 2020, counting down by fours (excluding 0)
 //     Challenge:Do this with a FOR loop first and then do it using a WHILE loop afterwards
-
+/*
  for (let x = 2020; x>1; x-=4) {
     console.group(x);
 }
@@ -35,23 +35,39 @@ flexCountdown(2,16,3);
 // modulus operator
 // 9 % 3 => 0
 // 9 % 2 => 1
- 
+ */
 // Sensei Bonus:
 // This is based on "Flexible Countdown." The parameter names are not as helpful, but the problem is essentially identical; don't be thrown off! 
 // Given 4 parameters (param1, param2, param3, param4), print the multiples of param1, starting at param2, and extending to parm3.
-    //param1 = multi, param2 = highNum; param3 = lowNum; 
+    //param1 = multi, param2 = lowNum; param3 = highNum; 
 // There's one exception: if a multiple is equal to param4, then  skip it (don't print it). Do this using a while loop.
     //if (param x = param4) >> skip number
 // Example: Given (3,5,17,9), the output should be 6,12,15 on successive lines, because 6,12, and 15 are multiples of 3, 
 // between 5 and 17, and excludes the value of 9.
 
-function flexCountdown1 (param1, param2, param3, param4) {
-    while (param3>=param2) {
-        if (param3%param1 === 0 && param3 !== param4) {
-            console.log (param3);
-            param3--;
+//                     mult    lowNum  highHum sameNum    
+function flexCountup1 (param1, param2, param3, param4) {
+    while (param2<=param3) {  //aka - lowNum<=highNum; breaks when lowNum>highNum
+        if (param2%param1 === 0 && param2 !== param4) { //if lowNum modulus mult equals 0 AND lowNum does not equal sameNum
+            console.log (param2); //print lowNum
         }
+        param2++; //after executing if-statement, increment lowNum +1
     }
 }
 
-flexCountdown1(3,5,17,9);
+flexCountup1(5,16,35,35) //prints 20,25,30; skips 35
+flexCountup1(3,5,17,9); //prints 6,12,15; skips 9
+flexCountup1(4,7,31,20); //prints 8,12,16,24,28; skips 20
+
+
+/*function flexCountdown2 (param1, param2, param3, param4) {
+    while (param3>=param2) {
+        if (param3%param1 === 0 && param3 !== param4) {
+            console.log (param3);
+        }
+        param3--;
+    }
+}
+
+flexCountdown2(3,5,17,9);
+*/

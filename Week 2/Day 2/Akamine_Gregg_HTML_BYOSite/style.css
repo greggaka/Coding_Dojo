@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+body {
+background-color:lightgray;
+}
+
 #container {
     width: 970px;
     margin: 0 auto;
@@ -10,6 +14,7 @@
 
 h1 {
     text-align: center;
+    background-color:yellow;
 }
 
 /* sidebar */
@@ -34,13 +39,14 @@ h1 {
 
 table {
     border-collapse: collapse;
-    border: 2px solid lightblue;
+    border: 2px solid black;
 }
     thead {
-        border-bottom: 2px solid lightblue;
+        border-bottom: 2px solid black;
     }
     th, td {
         padding: 5px 15px;
+        border: 1px solid black;
     }
 
 .hidden {
