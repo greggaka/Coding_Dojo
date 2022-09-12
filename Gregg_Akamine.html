@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="gakamine.css"
+    <link rel="stylesheet" href="gakamine.css">
 </head>
 <body>
     <div id="header">
@@ -14,11 +14,69 @@
             <h3>Educator, Full-Stack Web Developer</h3>
         </div>
         <div>
-            <ul>
+            <ul class="d-flex">
                 <li><a href="">About</a></li>
                 <li><a href="">Projects</a></li>
                 <li><a href="">Blog</a></li>
             </ul>
+        </div>
+        <img src="profile-pic.jpeg" alt="A picture of Gregg">
+        <div id="networking">
+            <ul class="d-flex">
+                <li><a href="https://github.com/greggaka"></a>My Github</li>
+                <li>my linkedin</li>
+                <li>my email</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Technologies</h3>
+            <table>
+                <thead>
+                    <th>Front End</th>
+                    <th>Python</th>
+                    <th>Javascript</th>
+                    <th>Database</th>
+                    <th>Concepts</th>
+                </thead>    
+                <tr>
+                    <td>HTML5</td>
+                    <td>Django</td>
+                    <td>Express</td>
+                    <td>MySQL</td>
+                    <td>AJAX</td>
+                </tr>
+                <tr>
+                    <td>CSS3</td>
+                    <td>Flask</td>
+                    <td>Mongoose</td>
+                    <td>MongoDB</td>
+                    <td>OOP</td>
+                </tr>
+                <tr>
+                    <td>Bootstrap</td>
+                    <td>Unittest</td>
+                    <td>React</td>
+                    <td></td>
+                    <td>REST</td>
+                </tr>
+            </table>
+        <div>
+            <h3>Coding Projects</h3>
+            <p>This area is currently in progress...</p>
+        </div>
+        <div id="contact">
+            <h3>Contact Me</h3>
+            <label>Name: </label>
+            <input type="text" name="firstlastname">
+            <br>
+            <label>Email: </label>
+            <input type="text" name="email">
+            <br>
+            <label>Message: </label>
+            <textarea name="message" cols="30" rows="5"></textarea>
+            <br>
+            <input type="submit" value="Send Message">
+        </div>
         </div>
     </div>
 </body>
