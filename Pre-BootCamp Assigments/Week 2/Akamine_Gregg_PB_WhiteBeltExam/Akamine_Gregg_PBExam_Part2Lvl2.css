@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* ADD A SANS SERIF DEFAULT FONT HERE */
+    font-family: sans-serif;
+    font-weight: 550;
+}
+
+body {
+    /* CHANGE THE BACKGROUND COLOR TO WHEAT */
+    background-color: wheat;
+}
+
+p,
+img {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: serif;
+    font-style: italic;
+}
+
+#container {
+    width: 900px;
+    margin: 0 auto;
+    min-height: 100vh;
+    /* CHANGE THE BACKGROUND COLOR TO WHITE
+    AND ADD A LIGHT GREY BORDER ON THE LEFT AND RIGHT */
+    background-color: white;
+    border: 3px solid lightgrey;
+}
+
+#header {
+    padding: 16px;
+    /*CHANGE THE TEXT COLOR TO WHITE AND
+    THE BACKGROUND COLOR SHOULD BE #79b5f1 */
+    color: white;
+    background: #79b5f1;
+}
+
+#nav {
+    /* CHANGE THE BACKGROUND COLOR TO LIGHT GRAY*/
+    background-color: lightgray;
+    /*REMOVE THE BULLET POINTS*/
+    list-style-type: none;
+    /*SHOULD YOU CHANGE THE WIDTH?*/
+    /*WHAT ABOUT PADDING?*/
+    padding: 22px;
+    /*DISPLAY THIS CONTAINER'S CHILDREN SIDE BY SIDE */
+    display: flex;
+}
+
+#nav a {
+    /* REMOVE THE UNDERLINES*/
+    text-decoration: none;
+    /*ADD SPACE BETWEEN THE LINKS */
+    justify-content: space-between;
+    margin: 10px;
+}
+
+main {
+    padding: 15px;
+}
