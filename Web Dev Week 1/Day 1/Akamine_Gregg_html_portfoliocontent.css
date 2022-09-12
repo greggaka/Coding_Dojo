@@ -1,0 +1,15 @@
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+ul {
+    justify-content: space-between;
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 50px;
+}
