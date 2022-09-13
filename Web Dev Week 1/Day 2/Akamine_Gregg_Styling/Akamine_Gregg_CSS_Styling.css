@@ -1,0 +1,37 @@
+* {
+    margin-bottom: 2px;
+}
+
+h1 {
+    background-color: black;
+    font-family: cursive;
+    color: cyan;
+    text-align: left;
+    font-size: 40px;
+    padding-left: 25px;
+    height: 60px;
+}
+
+#my {
+    color: white;
+}
+
+h2 {
+    background-color: rgb(98, 0, 98);
+    font-family: monospace;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-size: 30px;
+    height: 50px;
+}
+
+h3 {
+    background-color: rgb(173, 190, 230);
+    font-family: cursive;
+    text-align: right;
+    color:  black;
+    height: 40px;
+    text-decoration: underline;
+    padding-right: 25px;
+}
