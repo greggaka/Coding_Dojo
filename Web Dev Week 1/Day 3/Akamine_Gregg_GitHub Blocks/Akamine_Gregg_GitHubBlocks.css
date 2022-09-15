@@ -1,0 +1,47 @@
+* {
+    background-color: lightgray;
+}
+
+h1 {
+    color: darkslategray;
+    text-align: center;
+    align-content: center;
+    font-size: 200px;
+}
+
+img {
+    border: 1px solid black;
+    margin: 40px;
+}
+
+.container {
+    display: flex;
+    min-width: fit-content;
+    margin: 50px;
+    padding: 75px;
+    overflow: auto;
+}
+
+.container1 {
+    background-color: aqua;
+    justify-content: space-around;
+}
+
+.container2 {
+    background-color: palevioletred;
+    justify-content: space-evenly;
+}
+
+.container3 {
+    background-color: white;
+    justify-content: space-around;
+}
+
+.footer {
+    font-size: 80px;
+    text-align: center;
+}
+
+a {
+    color: rgba(21, 179, 179, 0.995);
+}
