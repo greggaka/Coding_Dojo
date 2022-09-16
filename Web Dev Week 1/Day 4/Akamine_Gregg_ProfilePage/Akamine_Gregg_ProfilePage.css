@@ -59,11 +59,15 @@ a {
 }
 
 .container {
-    height: 100%;
-    width: 60%;
+    max-width: 100%;
+    min-width: 50%;
+    max-height:100%;
+    min-height: 50%;
     margin-left: 20%;
+    margin-right:20%;
     margin-top: 2%;
     margin-bottom: 2%;
+    resize: none;
 }
 
 /*creates row to split and inline main content into two columns; line 22*/
@@ -83,8 +87,9 @@ a {
 
 /*creates larger container for profile card; 26*/
 .profileCard {
+    resize: none;
     background-color: white;
-    height: 400px;
+    height: fit-content;
     border: 5px solid lightgray;
     margin-right: 2%;
     margin-bottom: 2%;
@@ -99,12 +104,13 @@ a {
 /*styles bio and content in bottom part of profile card; 30*/
 .profileCardBottom{
     background-color: white;
-    height: 200px;
+    height: fit-content;
 }
 
 #bio {
     margin-top: 35px;
     margin-left: 7%;
+    font-size: larger;
 }
 .profileIcon {
     position: absolute;
@@ -135,6 +141,9 @@ a {
     margin-right: 15px;
 }
 
+.pad {
+    padding-bottom: 15px;
+}
 #editSettings {
     display: flex;
 }
@@ -194,16 +203,21 @@ a {
 /*styles bottom, list of friend requests; 51*/
 .potentialFriends {
     display: flex;
-    justify-content: flex-start;
+    justify-content: left;
     align-items: center;
+    margin-left: 6%;
+    margin-right: 6%;
 }
 
 .friendPic1 {
     height: 15%;
     width: 15%;
     margin: 2%;
-    margin-left: 6%;
     margin-right: 8%;
+}
+
+#philS {
+    margin-right: 4%;
 }
 
 .circle1 {
@@ -230,6 +244,7 @@ a {
 .connectionsCard {
     height:400px;
     margin-left: 2%;
+    margin-bottom: 3%;
 }
 
 /* styles bottom friend list; 59 */
@@ -261,6 +276,7 @@ a {
 .footer {
     display:flex;
     justify-content: center;
+    margin-top: 3%;
 }
 
 #viewMore {
