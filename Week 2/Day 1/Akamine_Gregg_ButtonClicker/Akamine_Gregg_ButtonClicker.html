@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker Assignment</title>
+    <link rel="stylesheet" href="Akamine_Gregg_ButtonClicker.css">
+</head>
+<body>
+    <div class="header">
+        <div id="headerTitle">
+            <h2>Dojonary</h2>
+        </div>
+        <div id="headerSearch">
+            <input type="search" value="Search">
+        </div>
+        <div id="login">
+            <button onclick="logout(this)" id="loginButton">Login</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left-main-column">
+            <div class="definitionBox">
+                <div class="word-info">
+                    <div class="ninja">
+                        <h2>ninja</h2>
+                        <p><em>noun</em></p>
+                        <p>Plural: <em>ninjas</em></p>
+                        <button class="likeButton" onclick="alert('Ninja was liked!')">13 Likes</button>
+                    </div>
+                </div>
+                <div class="definition">
+                    <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu.</a></p>
+                </div>
+            </div>
+            <div class="definitionBox">
+                <div class="word-info">
+                    <div class="ninja">
+                        <h2>ninja</h2>
+                        <p><em>noun</em></p>
+                        <p>Plural: <em>ninjas</em></p>
+                        <button class="likeButton" onclick="alert('Ninja was liked!')">37 Likes</button>
+                    </div>
+                </div>
+                <div class="definition">
+                    <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus.</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="add-definition">
+                <div class="dojonarytext">
+                    <p>Dojonary is defined by <strong>YOU</strong>.</p>
+                </div>
+                <div>
+                    <button onclick="remove(this)" class="addDefButton">Add Definition</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Akamine_Gregg_ButtonClicker.js"></script>
+</body>
+
+</html>
