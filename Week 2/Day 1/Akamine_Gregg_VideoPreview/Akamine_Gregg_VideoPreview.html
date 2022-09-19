@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoLab</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="Akamine_Gregg_VideoPreview.css">
+</head>
+<body>
+
+    <!-- top navigation -->
+    <div class="top">
+        <div class="nav-container">
+            <h1>VideoLab</h1>
+            <input type="text" placeholder="Search" name="query" class="search">
+            <button class="btn">Login</button>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div class="flex-container">
+
+        <!-- left column -->
+        <div class="col-l">
+
+            <!-- this is a placeholder replace it with a real video -->
+            <figure class="placeholder">
+                <video width="720" height="400" muted controls onmouseover="playVid(this)" onmouseout="pauseVid(this)">
+                    <source src="video.mp4" type="video/mp4" class="video-hover">
+                </video>
+            </figure>
+
+            <!-- video info -->
+            <div class="row">
+                <div class="start">
+                    <h1>Drone View of Big Waves Rushing to the Shore</h1>
+                    <h3>12.6M | February 29th, 2020</h3>
+                    <div class="user">
+                        <img src="enrique-hoyos-767.jfif" alt="Profile pic for enrique hoyos" class="avatar-s">
+                        <span class="user-name">Enrique Hoyos</span>
+                    </div>
+                </div>
+                <button class="btn">Subscribe</button>
+            </div>
+
+        </div>
+
+        <!-- right column -->
+        <div class="col-r">
+
+            <h3 class="sub-header">Up Next</h3>
+
+            <div class="video-small">
+                <video width="200"   height="100" onmouseover="">
+                    <source src="starry-night.mp4" alt="Timelapse video of the night sky" class="vid-s" type="video/mp4">
+                </video>
+                <span class="video-title">Time Lapse Video of Night Sky</span>
+            </div>
+
+            <div class="video-small">
+                <video width="200" height="100">
+                    <source src="city-lights.mp4" alt="Lights and streaks of a city" class="vid-s">
+                </video>
+                <span class="video-title">View of City in Timelapse Mode</span>
+            </div>
+
+            <div class="video-small">
+                <video width="200" height="100">
+                    <source src="aquarium-fish.mp4" alt="Fish in an aquarium" class="vid-s">
+                </video>
+                <span class="video-title">Different Kind of Marine Life On Display in an Aquarium</span>
+            </div>
+
+            <div class="video-small">
+                <video width="200" height="100">
+                    <source src="kite-flying.mp4" alt="Father and son flying a kit" class="vid-s">
+                </video>
+                <span class="video-title">Video of a Kid Flying a Kite</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>Videos from <a href="https://www.pexels.com/videos/">www.pexels.com.</a></p>
+    </div>
+
+    <script src="Akamine_Gregg_VideoPreview.js"></script>
+</body>
+</html>
