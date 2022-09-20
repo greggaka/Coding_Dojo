@@ -1,0 +1,121 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: cursive;
+}
+
+img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    width: 980px;
+    height: 65px;
+    padding-top: 5px;
+    padding-left: 20px;
+    margin:0 auto 0 auto;
+    align-items: center;
+    text-align: left;
+    font-size: 22px;
+}
+
+.feed {
+    background-color: white;
+    color: black;
+    text-align: center;
+    align-items: center;
+    width: 980px;
+    height: 60px;
+    padding-top: 15px;
+    margin:0 auto 0 auto;
+    font-size: 25px;
+}
+
+.main-container {
+    width: 1000px;
+    height: fit-content;
+    display: flex;
+    margin: auto;
+}
+
+.left-column {
+    flex: 1;
+}
+
+.profile-box {
+    border:3px solid black;
+    text-align: center;
+    margin: 0 15px 0 0;
+}
+
+#patrickpic {
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+    margin: 30px auto 15px auto;
+}
+
+.profile-box p {
+    margin: 30px auto 30px auto;
+    font-size: 18px;
+}
+
+.profile-box h3 {
+    margin: 30px auto 30px auto;
+    font-size: 30px;
+}
+
+.right-column {
+    flex: 3;
+}
+
+.friend-posts {
+    border: 3px solid black;
+    margin: 0 0 20px 15px;
+    height: 175px;
+}
+
+.name-likes {
+    display: flex;
+    align-items: center;
+}
+
+.friend-pic {
+    flex: 1;
+    margin: 15px 0 0 20px;
+}
+
+.friend-name {
+    flex: 4;
+    font-size: 20px;
+}
+
+.friend-likes {
+    flex: 2;
+    font-size: 20px;
+}
+
+.friend-like-button {
+    flex: 1;
+}
+
+.like-button {
+    background-color: gold;
+    border: 3px solid black;
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    box-shadow: 3px 3px black;
+    margin-right: 20px;
+}
+
+.post-body {
+    font-size: 20px;
+    margin: 10px auto auto 30px;
+    align-items: center;
+    height: 85px;
+}

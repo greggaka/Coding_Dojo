@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Akamine_Gregg_LikesPart2.css">
+    <title>Likes Assignment Part 2</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Network</h1>
+    </div>
+    <div class="feed">
+        <h2>Your Feed</h2>
+    </div>
+    <div class="main-container">
+        <div class="left-column">
+            <div class="profile-box">
+                <img src="patrick.jpg" alt="Patrick Star" id="patrickpic">
+                <p><a href="#">Change profile pic</a></p>
+                <h3>Patrick Star</h3>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="friend-posts">
+                <div class="name-likes">
+                    <div class="friend-pic">
+                        <img src="spongebob.jfif" alt="Spongebob">
+                    </div>
+                    <div class="friend-name">
+                        <h3>Spongebob S</h3>
+                    </div>
+                    <div class="friend-likes" id="friend0">
+                        <p>9 like(s)</p>
+                    </div>
+                    <div class="friend-like-button">
+                        <button class="like-button" onclick="addlike()" id="friend0a">Like</button>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p>I'm Ready! I'm Ready! I'm Ready! I got hired for my dream job, a fry cook at the <a href="#">Krusty Krab.</a></p>
+                </div>
+            </div>
+            <div class="friend-posts">
+                <div class="name-likes">
+                    <div class="friend-pic">
+                        <img src="squidward.jpg" alt="Squidward T">
+                    </div>
+                    <div class="friend-name">
+                        <h3>Squidward T</h3>
+                    </div>
+                    <div class="friend-likes" id="friend1">
+                        <p>12 like(s)</p>
+                    </div>
+                    <div class="friend-like-button">
+                        <button class="like-button" onclick="addlike1()" id="friend1a">Like</button>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p>I can't think of anything I'd love to do more than go <a href="#">jellyfishing</a> with my best friends, Spongebob and uhh...Patrick.</p>
+                </div>
+            </div>
+            <div class="friend-posts">
+                <div class="name-likes">
+                    <div class="friend-pic">
+                        <img src="krabs.jfif" alt="Mr. Krabs">
+                    </div>
+                    <div class="friend-name">
+                        <h3>Eugene K</h3>
+                    </div>
+                    <div class="friend-likes" id="friend2">
+                        <p>9 like(s)</p>
+                    </div>
+                    <div class="friend-like-button">
+                        <button class="like-button" onclick="addlike2()" id="friend2a">Like</button>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p>Hi there, I'm Mr. Krabs and I love money. Come on down to the Krusty Krab and buy a <a href="#">krabby patty</a> so you can give me your money.
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Akamine_Gregg_LikesPart2.js"></script>
+</body>
+</html>
