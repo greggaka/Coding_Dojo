@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+#checkerboard {
+    text-align: center;
+    margin:auto;
+}
+
+.square1 {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    padding: 1px;
+    display:inline-block;
+}
+
+.square2 {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    padding: 1px;
+    display:inline-block;
+}
