@@ -1,0 +1,3 @@
+SELECT id, name FROM names;
+INSERT INTO names (id, name) VALUES (1, 'Gregg');
+INSERT INTO names (id, name) VALUES (2, 'Scott'), (3, 'Andrew');
