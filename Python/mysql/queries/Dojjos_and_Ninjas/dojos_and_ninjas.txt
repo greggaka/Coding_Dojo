@@ -1,0 +1,49 @@
+Query: Create 3 new dojos
+INSERT INTO dojos (name) 
+VALUES  ('Fire'),
+        ('Leaf'),
+        ('Water');
+
+
+Query: Delete the 3 dojos you just created
+DELETE FROM dojos [WHERE id IN (1,2,3)];
+
+
+Query: Create 3 more dojos
+INSERT INTO dojos (name) 
+VALUES  ('Dragon'),
+        ('Snake'),
+        ('Panda');
+
+
+Query: Create 3 ninjas that belong to the first dojo
+INSERT INTO ninjas (first_name, last_name, age, dojo_id) 
+VALUES  ('Monkey D.', 'Luffy', 23, 1),
+        ('Roronoa', 'Zoro', 30, 1),
+        ('Vinsmoke', 'Sanji', 32, 1);
+
+
+Query: Create 3 ninjas that belong to the second dojo
+INSERT INTO ninjas (first_name, last_name, age, dojo_id)
+VALUES  ('Akagami no', 'Shanks', 55, 2),
+        ('Benn', 'Beckmann', 53, 2),
+        ('Lucky', 'Roux', 45, 2);
+
+
+Query: Create 3 ninjas that belong to the third dojo
+INSERT INTO ninjas (first_name, last_name, age, dojo_id)
+VALUES  ('Gol D', 'Roger', 73, 3),
+        ('Silvers', 'Rayleigh', 75, 3),
+        ('Scopper', 'Gabban', 68, 3);
+
+
+Query: Retrieve all the ninjas from the first dojo
+SELECT * FROM ninjas WHERE dojo_id = 1;
+
+
+Query: Retrieve all the ninjas from the last dojo
+SELECT * FROM ninjas WHERE dojo_id = 3;
+
+
+Query: Retrieve the last ninja's dojo
+SELECT * FROM ninjas JOIN dojos on dojos.id = ninjas.dojo_id WHERE ninjas.id = 12;
