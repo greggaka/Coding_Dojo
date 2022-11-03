@@ -1,26 +1,27 @@
 // import "bootstrap/dist/css/bootstrap.min.css";
-import React, { useState}  from 'react';
+import React, { useState }  from 'react';
 import './App.css';
-
 import FormDisplay from './components/Form'
 import BoxDisplay from './components/BoxDisplay'
 
 
 function App() {
-  const [boxes, setBoxes] = useState([]);
+  const [boxes, setNewBox] = useState([]);
 
-  const makeNewBox = (box) => {
-    setBoxes([...boxes, box])
+  const newBox = (box) => {
+    setNewBox([...boxes, box])
   }
   
   const boxElements = boxes.map(box => <BoxDisplay color = {box.color} />)
+  console.log(boxes);
 
   return (
     <div className="App">
       <div>
-        <FormDisplay makeNewBox = {makeNewBox} />
+        <FormDisplay newBox = {newBox} />
       </div>
       <div>
+        <h2>Boxes</h2>
         {boxElements}
       </div>
     </div>

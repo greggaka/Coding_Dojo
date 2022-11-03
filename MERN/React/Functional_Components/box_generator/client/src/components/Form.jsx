@@ -5,14 +5,14 @@ const FormDisplay = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        props.makeNewBox(color)
+        props.newBox(color)
         setColor("");
     };
 
     return (
         <form onSubmit = {handleSubmit}>
             <label htmlFor="color"> Color</label>
-            <input type="text" onChange={ (e) => setColor(e.target.value)} value = {color} />
+            <input type="text" name="color" onChange={ (e) => setColor(e.target.value)} value = {color} />
             <input type="submit" value="Make Box" />
         </form>
     );
